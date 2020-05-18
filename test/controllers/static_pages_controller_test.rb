@@ -2,8 +2,9 @@ require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get forum" do
-    get static_pages_forum_url
+    get root_path
     assert_response :success
+    assert_select "title", "Forum"
   end
 
 end
