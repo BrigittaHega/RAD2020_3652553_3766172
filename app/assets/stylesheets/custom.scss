@@ -79,6 +79,7 @@ footer {
 
 footer p {
   text-align: center;
+  color: #FFF
 }
 
 
@@ -95,3 +96,7 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
