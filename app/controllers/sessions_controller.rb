@@ -9,6 +9,10 @@ class SessionsController < ApplicationController
 
       # Listing 8.15:
       log_in user
+      # listing 9.7:
+      # remember user
+      # above code changed to listing 9.23:
+      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       redirect_to user
     else
       # flash[:danger] = 'Invalid email/password combination' # Not quite right!
@@ -20,7 +24,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
   end
   
