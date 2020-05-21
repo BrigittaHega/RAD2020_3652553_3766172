@@ -15,6 +15,10 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 #BOOK-listing 6.36--for password test/validation in log?or sign in?
 gem 'bcrypt', '3.1.12' #similar as line 13
 
+
+# gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+# gem 'rails-ujs', '~> 0.1.0'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
