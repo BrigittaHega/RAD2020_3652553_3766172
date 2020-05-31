@@ -1,0 +1,35 @@
+# following chapter 3:
+# Listing 3.33:
+
+# <% provide(:title, "Help") %>
+# <!DOCTYPE html>
+# <html>
+#     <head>
+#         # <title>Help | Ruby on Rails Tutorial Sample App</title>
+#         <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+#     </head>
+#     <body>
+#         <h1>Help</h1>
+#         <p>
+#             Get help on the Ruby on Rails Tutorial at the
+#             <a href="https://www.railstutorial.org/help">Rails Tutorial help
+#             page</a>.
+#             To get help on this sample app, see the
+#             <a href="https://www.railstutorial.org/book"><em>Ruby on Rails
+#             Tutorial</em> book</a>.
+#         </p>
+#     </body>
+# </html>
+
+
+
+# changed to this from listing 3.37--because we have changed the application.html.erb from app/views/layouts:
+<% provide(:title, "Help") %>
+<h1>News+ Help</h1>
+<p>
+    Get help on the Ruby on Rails Tutorial at the
+    <a href="https://www.railstutorial.org/help">Rails Tutorial help section</a>.
+    To get help on this sample app, see the
+    <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
+    book</a>.
+</p>
