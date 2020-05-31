@@ -1,28 +1,20 @@
-# following chapter 3 
-# Listing 3.31:
+# following chapter 5
 
-# <% provide(:title, "Home") %>
-# <!DOCTYPE html>
-# <html>
-#     <head>
-#         # <title>Home | Ruby on Rails Tutorial Sample App</title>
-#         <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
-#     </head>
-
-#     <body>
-#         <h1>Sample App</h1>
-#         <p>This is the home page for the
-#         <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-#         sample application.
-#         </p>
-#     </body>
-# </html>
-
-
-# changed to this from listing 3.36--because we have changed the application.html.erb from app/views/layouts:
+# changed to this from listing 5.2
 <% provide(:title, "Home") %>
 <h1>News+</h1>
 <p>This is the home page for the
     <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
     sample application.
 </p>
+
+<div class="center jumbotron">
+    <h1>Welcome to the News+</h1>
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application.
+    </h2>
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
