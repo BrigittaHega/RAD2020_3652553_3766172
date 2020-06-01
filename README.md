@@ -13,7 +13,7 @@ Last heroku deployment log:
 s3766172@student.rmit.edu.au: Deployed 52d703fc
 May 15 at 8:03 PM · v6
 
-Git name: assg_rad
+Git name: RAD2020_3652553_3766172
 https://github.com/BrigittaHega/RAD2020_3652553_3766172.git
 
 
