@@ -6,6 +6,7 @@ Brigitta Gloria Hegarini - s3766172
 Dana Dawaname - s3652553
 Highest Level we attempted: PASS
 Ega toogl: https://toggl.com/app/3597355/projects/160848271/team
+Dawaname Dawaname toogl: https://toggl.com/app/4336686/projects/161056582/team
 heroku deployment url: https://nameless-reef-03788.herokuapp.com/
 
 Last heroku deployment log: 
