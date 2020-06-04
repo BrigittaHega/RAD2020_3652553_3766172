@@ -68,6 +68,16 @@ class UserTest < ActiveSupport::TestCase
 	@user.save
 	assert_equal mixed_case_email.downcase, @user.reload.email
   end
+  
+  test "password should be present (nonblank)" do
+	@user.password = @user.password_confirmation = " " * 6
+	assert_not @user.valid?
+  end
+
+  test "password should have minimum length" do
+	@user.password = @user.password_confirmation = "a" * 5
+	assert_not @user.valid?
+  end
   # for the phone numbers in user.rb file in app/models:
   # should the phone have the uniqueness? if yes, how should we change the code for email to phone?
 end
