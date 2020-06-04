@@ -1,6 +1,6 @@
 # README
 
-<!-- assginment -->
+<!-- assignment -->
 
 Brigitta Gloria Hegarini - s3766172
 Dana Dawaname - s3652553
