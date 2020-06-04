@@ -6,4 +6,5 @@ class User < ApplicationRecord
             format: { with: VALID_EMAIL_REGEX },
             uniqueness: { case_sensitive: false }
   validates :mobile, presence: true
+  has_secure_password
 end
