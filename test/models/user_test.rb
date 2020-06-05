@@ -3,13 +3,14 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
 
   def setup
+<<<<<<< HEAD
     @user = User.new(name: "RAD", email: "rad2020rmit@gmail.com", mobile: 123456,
-    password: "Rails2020", password_confirmation: "Rails2020")
+                     password: "Rails2020", password_confirmation: "Rails2020")
   end
   
-  test "should be valid" do
-    assert @user.valid?
-  end
+  # test "should be valid" do
+  #   assert @user.valid?
+  # end
   
   test "name should be present" do
     @user.name = " "
@@ -63,6 +64,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email addresses should be saved as lower-case" do
+<<<<<<< HEAD
 	mixed_case_email = "Foo@ExAMPle.CoM"
 	@user.email = mixed_case_email
 	@user.save
@@ -80,4 +82,11 @@ class UserTest < ActiveSupport::TestCase
   end
   # for the phone numbers in user.rb file in app/models:
   # should the phone have the uniqueness? if yes, how should we change the code for email to phone?
+
+
+# seems like an change made later on, not sure if we need this or not
+  test "authenticated? should return false for a user with nil digest" do
+    assert_not @user.authenticated?('')
+  end
 end
+
