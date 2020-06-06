@@ -21,10 +21,10 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
   
-  test "mobile phone number should be present" do
-    @user.mobile = " "
-    assert_not @user.valid?
-  end
+#  test "mobile phone number should be present" do
+#    @user.mobile = " "
+#    assert_not @user.valid?
+#  end
   
   test "name should not be too long" do
     @user.name = "a" * 51
@@ -83,8 +83,8 @@ class UserTest < ActiveSupport::TestCase
 
 
 # seems like an change made later on, not sure if we need this or not
-  test "authenticated? should return false for a user with nil digest" do
-    assert_not @user.authenticated?('')
-  end
+#  test "authenticated? should return false for a user with nil digest" do
+#    assert_not @user.authenticated?('')
+#  end
 end
 

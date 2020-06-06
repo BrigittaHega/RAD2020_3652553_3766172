@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
 
 
-
+  has_many :microposts
 # Dawaname's tutorial code:
   attr_accessor :remember_token
 
@@ -36,15 +36,21 @@ class User < ApplicationRecord
   end
 
   # Returns a random token.
-  def User.new_token
+  def new_token#User.new_token
     SecureRandom.urlsafe_base64
   end
 
   # Remembers a user in the database for use in persistent sessions.
   def remember
-    self.remember_token = User.new_token
-    update_attribute(:remember_digest, User.digest(remember_token))
+    #self.remember_token = User.new_token
+    self.update_attribute(:remember_digest, new_token)#User.digest(remember_token))
   end
+
+#  def remember(user)
+#    user.remember
+#    cookies.permanent[:remember_token] = user.remember_digest
+#    cookies.permament.signed[:user_id] = user.id
+#  end
 
   # Returns true if the given token matches the digest.
   def authenticated?(remember_token)

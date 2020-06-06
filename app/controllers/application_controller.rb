@@ -6,11 +6,6 @@ class ApplicationController < ActionController::Base
 #   #end
 # =======
 
-
-
-
-
-
 # Dawanamo's tutorial code:
 
     protect_from_forgery with: :exception
@@ -21,5 +16,4 @@ class ApplicationController < ActionController::Base
 
     # from listing 8.13:
     include SessionsHelper
-# >>>>>>> 643e381bb3f0898e7a036c2cf7cea9e08c8bac6e
 end

@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
     # binding.pry
     # debugger
   end
@@ -40,5 +41,4 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
     end
-# >>>>>>> 643e381bb3f0898e7a036c2cf7cea9e08c8bac6e
 end
