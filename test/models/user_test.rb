@@ -3,7 +3,6 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
 
   def setup
-<<<<<<< HEAD
     @user = User.new(name: "RAD", email: "rad2020rmit@gmail.com", mobile: 123456,
                      password: "Rails2020", password_confirmation: "Rails2020")
   end
@@ -64,7 +63,6 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email addresses should be saved as lower-case" do
-<<<<<<< HEAD
 	mixed_case_email = "Foo@ExAMPle.CoM"
 	@user.email = mixed_case_email
 	@user.save
