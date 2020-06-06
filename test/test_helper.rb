@@ -7,13 +7,6 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
-
-  
-
-
-
-
-
   
   # Dawaname's tutorial code
 
@@ -23,11 +16,11 @@ class ActiveSupport::TestCase
   end
 
   # Log in as a particular user.
-  def log_in_as(user)
-    session[:user_id] = user.id
-  end
+#  def log_in_as(user)
+#    session[:user_id] = user.id
+#  end
 end
-
+=begin
 class ActionDispatch::IntegrationTest
 
   # Log in as a particular user.
@@ -36,5 +29,5 @@ class ActionDispatch::IntegrationTest
                                             password: password,
                                   remember_me: remember_me } }
   end 
-
+=end
 end

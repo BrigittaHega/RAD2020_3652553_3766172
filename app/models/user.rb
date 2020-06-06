@@ -15,7 +15,7 @@ class User < ApplicationRecord
 
   has_many :microposts
 # Dawaname's tutorial code:
-  attr_accessor :remember_token
+#  attr_accessor :remember_token
 
   # before_save { email.downcase! }
   before_save { self.email = email.downcase }
@@ -34,7 +34,8 @@ class User < ApplicationRecord
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
-
+#Removing Remember me because not necessary to PASS level
+=begin
   # Returns a random token.
   def new_token#User.new_token
     SecureRandom.urlsafe_base64
@@ -62,4 +63,5 @@ class User < ApplicationRecord
   def forget
     update_attribute(:remember_digest, nil)
   end
+=end
 end
