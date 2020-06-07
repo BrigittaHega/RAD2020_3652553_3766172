@@ -18,7 +18,9 @@ Git name: RAD2020_3652553_3766172
 https://github.com/BrigittaHega/RAD2020_3652553_3766172.git
 
 
-
+<!-- online tutorial guide used for forum building -->
+https://medium.com/@deallen7/how-to-build-a-forum-with-ruby-on-rails-3249870a72d2#491b 
+up to step 14. and the changes are made in tut-accounts.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
