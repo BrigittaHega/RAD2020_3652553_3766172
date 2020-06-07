@@ -24,6 +24,7 @@ gem 'rails-controller-testing'
 #BOOK-listing 6.36--for password test/validation in log?or sign in?
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+#jquery-rails can't work without the gem below
 gem 'rails-ujs', '~> 0.1.0'
 
 # gem 'therubyracer', :platforms => :ruby

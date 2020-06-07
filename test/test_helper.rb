@@ -19,7 +19,7 @@ class ActiveSupport::TestCase
 #  def log_in_as(user)
 #    session[:user_id] = user.id
 #  end
-end
+#end
 =begin
 class ActionDispatch::IntegrationTest
 

@@ -1,12 +1,13 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
+
   test "should get forum" do
     
     get root_path#--routes.rb--line 6 has been changed into this, Listing 5.28
     # get static_pages_home_url
     assert_response :success
-    assert_select "title", "Forum+"
+    assert_select "title", "Forum"
   end
 
 # need to change the following tutorial files into assignment files

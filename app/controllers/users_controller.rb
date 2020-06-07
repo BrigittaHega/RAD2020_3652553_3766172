@@ -34,6 +34,10 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+  
+  def index
+    @users = User.all
+  end
 
   private
 
