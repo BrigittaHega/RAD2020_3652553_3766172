@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root 'static_pages#forum'
 
+  # online resouorce for forum page, not sure if this works
+  resources :posts
+  root 'posts#index'
+
 
 # Dawaname's tutorial code:
   get 'sessions/new'

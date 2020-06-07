@@ -7,7 +7,16 @@ ruby '2.7.0'
 gem 'rails', '~> 5.2.4'
 gem 'bootstrap-sass', '3.3.7'
 
-# =======
+# online guide on how to build forum page:
+gem 'haml', '~> 5.0', '>= 5.0.4'
+gem 'simple_form', '~> 4.0', '>= 4.0.1'
+gem 'devise', '~> 4.4', '>= 4.4.3' 
+
+
+
+
+
+
 # dawaname's tut code, may cause jquery error
 
 # ruby '2.5.7'
