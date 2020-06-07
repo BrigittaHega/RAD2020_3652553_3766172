@@ -388,4 +388,22 @@ Expected at least 1 element matching "div.pagination", found 0..
 Expected 0 to be >= 1.
 
 
+9:42 pm
+No idea if this is error or just warning, but I will put it here for documentation
+To automatically update from positional arguments to keyword arguments,
+install rubocop-faker and run:
+
+rubocop \
+  --require rubocop-faker \
+  --only Faker/DeprecatedArguments \
+  --auto-correct
+
+/home/sdouser/Documents/assg_rad/db/seeds.rb:26: Passing `word_count` with the 1st argument of `sentence` is deprecated. Use keyword argument like `sentence(word_count: ...)` instead.
+
+11:05 
+I remove this from home.html.erb
+<!--<section class="micropost_form">
+<%= render 'shared/micropost_form' %>
+</section>-->
+
 

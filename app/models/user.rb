@@ -34,6 +34,11 @@ class User < ApplicationRecord
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
+  
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
+  
 #Removing Remember me because not necessary to PASS level
 =begin
   # Returns a random token.
